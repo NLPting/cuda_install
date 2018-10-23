@@ -11,6 +11,7 @@
 ##### cp cuda/include/cudnn.h /home/nlplab/ting/cuda-9.0/include
 ##### cp cuda/lib64/libcudnn* /home/nlplab/ting/cuda-9.0/lib64
 ##### chmod a+r /home/nlplab/ting/cuda-9.0/include/cudnn.h /home/nlplab/ting/cuda-9.0/lib64/libcudnn*
+##### vim ~/.zshrc
 ##### export PATH=export PATH=$HOME/cuda-9.0/bin:$PATH
 ##### export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/cuda-9.0/lib64/
 ##### source ~/.zshrc
@@ -19,7 +20,7 @@
 ##### nvidia-smi
 ##### you can look gpu
 
-#  pip install tensorflow-gpu==1.8.0
+#  pip install tensorflow-gpu==1.8.0 (you must python<=3.7.0)
 
 ##### Creates a graph.
 a = tf.constant([1.0, 2.0, 3.0, 4.0, 5.0, 6.0], shape=[2, 3], name='a')
